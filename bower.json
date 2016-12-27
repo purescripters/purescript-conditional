@@ -1,0 +1,24 @@
+{
+  "name": "purescript-conditional",
+  "homepage": "https://github.com/purescripters/purescript-conditional",
+  "description": "A simple purescript library for shorthand conditional expressions",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/purescripters/purescript-conditional.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-prelude": "^2.1.0",
+    "purescript-console": "^2.0.0"
+  },
+  "devDependencies": {
+    "purescript-psci-support": "^2.0.0",
+    "purescript-test-unit": "^10.0.1"
+  }
+}
