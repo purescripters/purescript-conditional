@@ -26,15 +26,8 @@ y' = if (false && true) then (3 + 5) else (5 * 2)
 
 
 
-main ::
-    forall t10.
-      Eff
-        ( console :: CONSOLE
-        , testOutput :: TESTOUTPUT
-        , avar :: AVAR
-        | t10
-        )
-        Unit
+main :: forall e
+      . Eff (console :: CONSOLE, testOutput :: TESTOUTPUT, avar :: AVAR | e) Unit
 main = runTest do
   describe "ifelse" do
     it "should return the same value as the equivalent if else statement" $ do
