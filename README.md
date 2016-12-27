@@ -6,5 +6,5 @@ Provides a simple shorthand for conditional statements, analagous to `predicate 
 
 ```purescript
 import Conditional ((?))
-(false && true) ? (3 + 5) $ (5 * 2)  -- 8
+(false || true) ? (3 + 5) $ (5 * 2)  -- 8
 ```
